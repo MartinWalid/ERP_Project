@@ -7,4 +7,5 @@ export default function useDebounce(fn, ms = 0, deps = []) {
   useEffect(reset, deps);
 
   return [isReady, cancel];
+  
 }
