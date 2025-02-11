@@ -13,6 +13,7 @@ const beforeUpload = (file) => {
   if (!isLt2M) {
     message.error('Image must smaller than 2MB!');
   }
+  console.log(isLt2M)
   return isJpgOrPng && isLt2M;
 };
 
